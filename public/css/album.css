@@ -1,0 +1,117 @@
+body {
+	padding: 0;
+	margin: 0;
+}
+
+.pc-slide {
+	width: 700px;
+	margin: 0 auto;
+}
+
+.view .swiper-container {
+	background: #8a7d7d;
+	width: 700px;
+	height: 500px;
+}
+.view h3{
+	width: 100%;
+	text-align: center;
+}
+.view .arrow-left {
+	background: url(../images/index_tab_l.png) no-repeat left top;
+	background-color: rgba(240, 248, 255, 0.514);
+	position: absolute;
+	left: 10px;
+	top: 50%;
+	margin-top: -25px;
+	width: 28px;
+	height: 51px;
+	z-index: 10;
+}
+
+.view .arrow-right {
+	background: url(../images/index_tab_r.png) no-repeat left bottom;
+	background-color: rgba(240, 248, 255, 0.514);
+	position: absolute;
+	right: 10px;
+	top: 50%;
+	margin-top: -25px;
+	width: 28px;
+	height: 51px;
+	z-index: 10;
+}
+
+.preview {
+	width: 100%;	
+	margin-top: 10px;
+	position: relative;
+}
+
+.preview .swiper-container {
+	background: #8a7d7d;
+	width: 632px;
+	height: 82px;
+	margin-left: 35px;
+}
+
+.preview .swiper-slide {
+	width: 90px;
+	height: 82px;
+	cursor:pointer;
+}
+
+.preview .slide6 {
+	width: 82px;
+}
+
+.preview .arrow-left {
+	background: url(../images/feel3.png) no-repeat left top;
+	position: absolute;
+	left: 10px;
+	top: 50%;
+	margin-top: -9px;
+	width: 9px;
+	height: 18px;
+	z-index: 10;
+}
+
+.preview .arrow-right {
+	background: url(../images/feel4.png) no-repeat left bottom;
+	position: absolute;
+	right: 10px;
+	top: 50%;
+	margin-top: -9px;
+	width: 9px;
+	height: 18px;
+	z-index: 10;
+}
+
+.preview img {
+	padding: 1px;
+}
+
+.preview .active-nav img {
+	padding: 0;
+	border: 1px solid #F00;
+}
+.thumbnail{
+	width: 100%;
+	height: 100%;
+}
+.swiper-slide img{
+	width: 100%;
+	height: 100%;
+}
+.del{
+	position: absolute;
+    display: block;
+    padding: 0 5px;
+    font: 30px/30px '微软雅黑';
+    top: 10px;
+    right: 10px;
+	color: black;
+	background: white;
+	text-decoration: none;
+	cursor: pointer;
+    border: 1px solid black;
+}

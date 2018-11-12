@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>添加相册</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="/">全部相册 <span class="sr-only">(current)</span></a></li>
+                    <li><a href="up">上传</a></li>
+                    <li class="active"><a href="add">添加相册</a></li>
+                    <li><a href="del">删除相册</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <form style="width: 40%" method="post" enctype="multipart/form-data" action="#">
+
+                <div class="form-group">
+                    <label for="exampleInputFile">添加相册</label>
+                    <input type="text" required id="exampleInputFile" name="newfile">
+                    <button type="submit" class="btn btn-default">添加</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+    <script src="/js/jquery-2.1.4.min.js"></script>
+    <script src="/js/bootstrap.min.js"></script>
+</body>
+
+</html>

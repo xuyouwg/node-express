@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>
+        <%= albumname %>
+    </title>
+    <link rel="stylesheet" href="../css/bootstrap.min.css">
+    <link rel="stylesheet" href="../css/swiper.min.css">
+    <link rel="stylesheet" href="../css/album.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-default">
+        <div class="container-fluid">
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="/">返回相册列表</a></li>
+                    <li><a href="http://localhost:3000/up">上传图片</a></li>
+                    <li><a href="#" class="active">相册
+                            <%= albumname %></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="pc-slide">
+        <div class="view">
+            <div class="swiper-container">
+                <a class="arrow-left" href="#"></a>
+                <a class="arrow-right" href="#"></a>
+                <div class="swiper-wrapper">
+                    <% if(images.length>0) {for(var i = 0; i < images.length; i++){ %>
+                    <div class="swiper-slide">
+                        <a href="<%= images[i] %>" class="thumbnail" target="_blank"><img src=" <%= images[i] %>" alt=""></a>
+                        <a class="del" href="http://localhost:3000/dels/<%= albumname %>/<%= images[i]%>">X</a>
+                    </div>
+                    <% } }else{%>
+                    <h3>该相册目前没有图片!</h3>
+                    <%}%>
+                </div>
+            </div>
+        </div>
+        <div class="preview">
+            <a class="arrow-left" href="#"></a>
+            <a class="arrow-right" href="#"></a>
+            <div class="swiper-container">
+                <div class="swiper-wrapper">
+                    <% if(images.length>0){ for(var i = 0; i < images.length; i++){ %>
+                    <div class="swiper-slide active-nav">
+                        <a href="<%= images[i] %>" class="thumbnail">
+                            <img src="<%= images[i] %>" alt="">
+                        </a>
+                    </div>
+                    <% }} %>
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="../js/jquery-2.1.4.min.js"></script>
+    <script src="../js/bootstrap.min.js"></script>
+    <script src="../js/swiper.min.js"></script>
+    <script src="../js/album.js"></script>
+
+</body>
+
+</html>
